@@ -14,7 +14,7 @@ const LoginCover = () => {
   return (
     <div className='auth-wrapper auth-cover'>
       <Row className='auth-inner m-0'>
-        <Link className='brand-logo' to='/' onClick={e => e.preventDefault()}>
+        <a className='brand-logo' href='https://pncpwebsite.herokuapp.com/'>
           <svg viewBox='0 0 139 95' version='1.1' height='28'>
             <defs>
               <linearGradient x1='100%' y1='10.5120544%' x2='50%' y2='89.4879456%' id='linearGradient-1'>
@@ -63,8 +63,8 @@ const LoginCover = () => {
               </g>
             </g>
           </svg>
-          <h2 className='brand-text text-primary ms-1'>Vuexy</h2>
-        </Link>
+          <h2 className='brand-text text-primary ms-1'>PCNP</h2>
+        </a>
         <Col className='d-none d-lg-flex align-items-center p-5' lg='8' sm='12'>
           <div className='w-100 d-lg-flex align-items-center justify-content-center px-5'>
             <img className='img-fluid' src={source} alt='Login Cover' />
@@ -73,7 +73,7 @@ const LoginCover = () => {
         <Col className='d-flex align-items-center auth-bg px-2 p-lg-5' lg='4' sm='12'>
           <Col className='px-xl-2 mx-auto' sm='8' md='6' lg='12'>
             <CardTitle tag='h2' className='fw-bold mb-1'>
-              Welcome to Vuexy! 👋
+              Welcome to PCNP! 👋
             </CardTitle>
             <CardText className='mb-2'>Please sign-in to your account and start the adventure</CardText>
             <Form className='auth-login-form mt-2' onSubmit={e => e.preventDefault()}>
@@ -114,16 +114,17 @@ const LoginCover = () => {
               <div className='divider-text'>or</div>
             </div>
             <div className='auth-footer-btn d-flex justify-content-center'>
-              <Button color='facebook'>
+            <Button href="https://www.facebook.com/PCNProtocol/" color='facebook'>
+                
                 <Facebook size={14} />
               </Button>
-              <Button color='twitter'>
+              <Button href="https://twitter.com/PcnProtocol" color='twitter'>
                 <Twitter size={14} />
               </Button>
               <Button color='google'>
                 <Mail size={14} />
               </Button>
-              <Button className='me-0' color='github'>
+              <Button href="https://www.reddit.com/r/PCNProtocol/" className='me-0' color='github'>
                 <GitHub size={14} />
               </Button>
             </div>

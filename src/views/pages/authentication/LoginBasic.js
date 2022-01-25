@@ -19,7 +19,7 @@ const LoginBasic = () => {
       <div className='auth-inner my-2'>
         <Card className='mb-0'>
           <CardBody>
-            <Link className='brand-logo' to='/' onClick={e => e.preventDefault()}>
+            <a className='brand-logo' href='https://pncpwebsite.herokuapp.com/' >
               <svg viewBox='0 0 139 95' version='1.1' height='28'>
                 <defs>
                   <linearGradient x1='100%' y1='10.5120544%' x2='50%' y2='89.4879456%' id='linearGradient-1'>
@@ -68,10 +68,10 @@ const LoginBasic = () => {
                   </g>
                 </g>
               </svg>
-              <h2 className='brand-text text-primary ms-1'>Vuexy</h2>
-            </Link>
+              <h2 className='brand-text text-primary ms-1'>PCNP</h2>
+            </a>
             <CardTitle tag='h4' className='mb-1'>
-              Welcome to Vuexy! 👋
+              Welcome to PCNP! 👋
             </CardTitle>
             <CardText className='mb-2'>Please sign-in to your account and start the adventure</CardText>
             <Form className='auth-login-form mt-2' onSubmit={e => e.preventDefault()}>
@@ -112,16 +112,17 @@ const LoginBasic = () => {
               <div className='divider-text'>or</div>
             </div>
             <div className='auth-footer-btn d-flex justify-content-center'>
-              <Button color='facebook'>
+            <Button href="https://www.facebook.com/PCNProtocol/" color='facebook'>
+                
                 <Facebook size={14} />
               </Button>
-              <Button color='twitter'>
+              <Button href="https://twitter.com/PcnProtocol" color='twitter'>
                 <Twitter size={14} />
               </Button>
               <Button color='google'>
                 <Mail size={14} />
               </Button>
-              <Button className='me-0' color='github'>
+              <Button href="https://www.reddit.com/r/PCNProtocol/" className='me-0' color='github'>
                 <GitHub size={14} />
               </Button>
             </div>
